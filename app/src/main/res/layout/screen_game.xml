@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="@drawable/bg_main"-->
+
+    <ImageView
+        android:id="@+id/game_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Home"
+        android:textColor="#FFC400"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/iv_home"
+        app:layout_constraintStart_toStartOf="@id/iv_home"
+        app:layout_constraintTop_toBottomOf="@id/iv_home" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Back 1 step"
+        android:textColor="#FFC400"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/iv_back"
+        app:layout_constraintStart_toStartOf="@id/iv_back"
+        app:layout_constraintTop_toBottomOf="@id/iv_back" />
+
+    <TextView
+        android:id="@+id/tv_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Restart"
+        android:textColor="#FFC400"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/iv_restart"
+        app:layout_constraintStart_toStartOf="@id/iv_restart"
+        app:layout_constraintTop_toBottomOf="@id/iv_restart" />
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/iv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/metal"
+        android:contentDescription="home"
+        android:padding="10dp"
+        android:src="@drawable/home3"
+        app:imageView_duration="100"
+        app:imageView_scale="0.9"
+        app:layout_constraintBottom_toTopOf="@id/ll_main"
+        app:layout_constraintEnd_toStartOf="@id/iv_back"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/currScore" />
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/metal"
+        android:padding="10dp"
+        android:contentDescription="back one step"
+        android:src="@drawable/back2"
+        app:imageView_duration="100"
+        app:imageView_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="@id/iv_home"
+        app:layout_constraintEnd_toStartOf="@id/iv_restart"
+        app:layout_constraintStart_toEndOf="@id/iv_home"
+        app:layout_constraintTop_toTopOf="@id/iv_home" />
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/iv_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="restart the game"
+        android:background="@drawable/metal"
+        android:padding="10dp"
+        android:src="@drawable/restart"
+        app:imageView_duration="100"
+        app:imageView_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="@id/iv_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_back"
+        app:layout_constraintTop_toTopOf="@id/iv_home" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Your score"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/currScore"
+        app:layout_constraintStart_toStartOf="@id/currScore"
+        app:layout_constraintTop_toTopOf="@id/currScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Max score"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/maxScore"
+        app:layout_constraintStart_toStartOf="@id/maxScore"
+        app:layout_constraintTop_toTopOf="@id/maxScore" />
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back">
+        <!--android:background="@drawable/bg_desk"-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn1"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn5"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn9"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn13"
+                style="@style/item_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn2"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn6"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn10"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn14"
+                style="@style/item_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn3"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn7"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn11"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn15"
+                style="@style/item_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn4"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn8"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn12"
+                style="@style/item_style" />
+
+            <TextView
+                android:id="@+id/btn16"
+                style="@style/item_style" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/currScore"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/metal"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@id/iv_home"
+        app:layout_constraintEnd_toStartOf="@id/maxScore"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/ll_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/maxScore"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/metal"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@id/iv_home"
+        app:layout_constraintEnd_toEndOf="@id/ll_main"
+        app:layout_constraintStart_toEndOf="@id/currScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">2048_Game</string>
+    <string name="info">The 2048 App is designed to enhance your daily experience. With it, you can develop critical thinking and planning while offering a simple and immersive gaming experience.\n\nVersion: 1.0.0\n\nDeveloped by Nortojiyev Otabek.\n\nContact Information:\nGmail: otashmotash@gmail.com\n\nSocial Media:\nFacebook, Telegram, Instagram\n\nWe do not collect your personal data\n\nSupport If you have any questions or issues, please contact me at otashmotash@gmail.com.</string>
+    <string name="gmail"><a href="https://www.otashmotash@gmail.com/">otashmotash@gmail.com</a></string>
+    <string name="telegram"><a href="">Telegram</a></string>
+</resources>

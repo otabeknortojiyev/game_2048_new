@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/win_bg3" />
+
+        <TextView
+            android:id="@+id/you_reach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:text="You reach"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/id_2048"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id_2048"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:text="2048"
+            android:textColor="#D50000"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@id/you_reach"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/you_reach"
+            app:layout_constraintTop_toTopOf="@id/you_reach" />
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/acb_continue_2048"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/metal"
+            android:fontFamily="@font/audiowide"
+            android:text="CONTINUE"
+            android:textColor="#63FF00"
+            android:textSize="20sp"
+            app:button_duration="100"
+            app:button_scale="0.9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/acb_restart_2048"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/acb_restart_2048"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/metal"
+            android:fontFamily="@font/audiowide"
+            android:text="RESTART"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:button_duration="100"
+            app:button_scale="0.9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/acb_continue_2048" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
