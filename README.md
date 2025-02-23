@@ -17,7 +17,12 @@
 
 ## 📸 Скриншоты
 
-![Скриншот игры](https://drive.google.com/file/d/1nm0KHS-I6DSrAsrMl6PoNQvonvEdyomp/view?usp=share_link)
+<p float="left">
+  <img src="https://drive.google.com/uc?export=view&id=1nm0KHS-I6DSrAsrMl6PoNQvonvEdyomp" width="10%" />
+  <img src="https://drive.google.com/uc?export=view&id=1qFTHcoraHVLmijermKL-aM_UdZPH0rsB" width="10%" />
+  <img src="https://drive.google.com/uc?export=view&id=10v1A8fQLYmBS0RmXZhZ5k3ZmIu_Qz4bz" width="10%" />
+  <img src="https://drive.google.com/uc?export=view&id=1nQWR9eFDSZBURAkNleNtLBJE9xQ6zggF" width="10%" />
+</p>
 
 ## ⚙️ Установка и запуск
 
